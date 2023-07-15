@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+del {
+    text-decoration: line-through;
+}
+header,
+section,
+article,
+aside,
+nav,
+footer,
+address {
+    display: block;
+}
+body {
+    /* font-family: "baloo_paaji_2regular"; */
+    font-family: "gordita_regular";
+    font-size: 17px;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #fff;
+}
+input,
+textarea,
+select {
+    /* font-family: "baloo_paaji_2regular"; */
+    font-family: "gordita_regular";
+}
+a {
+    color: #333;
+}
+a:hover,
+.submit:hover {
+    filter: alpha(opacity = 85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+}
+.thumb {
+    display: block;
+}
+.thumb img {
+    display: block;
+    width: 100%;
+}
+p {
+    line-height: 1.6em;
+    font-size: 16px;
+    /* font-family: "baloo_paaji_2regular"; */
+    font-family: "gordita_regular";
+}
+.hidden {
+    display: none;
+}
+br.clear {
+    clear: both;
+    line-height: 0;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+p,
+h1,
+h2,
+a,
+input {
+    /* font-family: "baloo_paaji_2regular"; */
+    font-family: "gordita_regular";
+    color: #333;
+}
+input::-webkit-input-placeholder {
+    color: #ffffff96;
+}
+input:-moz-placeholder {
+    color: #ffffff96;
+}
+/* @font-face {
+    font-family: "baloo_paaji_2semibold";
+    src: url("../fonts/baloo-paaji/semibold-webfont.woff2") format("woff2"),
+        url("../fonts/baloo-paaji/semibold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "baloo_paaji_2regular";
+    src: url("../fonts/baloo-paaji/regular-webfont.woff2") format("woff2"),
+        url("../fonts/baloo-paaji/regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "baloo_paaji_2medium";
+    src: url("../fonts/baloo-paaji/medium-webfont.woff2") format("woff2"),
+        url("../fonts/baloo-paaji/medium-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "baloo_paaji_2bold";
+    src: url("../fonts/baloo-paaji/bold-webfont.woff2") format("woff2"),
+        url("../fonts/baloo-paaji/bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: "gordita_regular";
+    src: url("../fonts/gordita/GorditaRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "gordita_medium";
+    src: url("../fonts/gordita/GorditaMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "gordita_bold";
+    src: url("../fonts/gordita/GorditaBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+#main {
+    /* padding-left: 50px; */
+    padding: 90px 50px 50px 50px;
+    height: 100vh;
+}
+/* date_picker */
+.react-datepicker__month-container {
+    float: left !important;
+}
+.react-datepicker__header {
+    background-color: #161618 !important;
+    color: #fff !important;
+    border-bottom: 1px solid #1b1c20 !important;
+    padding: 15px 13px 13px 13px !important;
+}
+.react-datepicker__day--keyboard-selected {
+    background-color: #1b1c20 !important;
+}
+.react-datepicker__navigation--next {
+    top: 16px !important;
+    right: 16px !important;
+    border-left-color: #ccc;
+}
+.react-datepicker__navigation--previous {
+    top: 16px !important;
+    left: 16px !important;
+    border-left-color: #ccc;
+}
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+    color: #fff !important;
+}
+.react-datepicker {
+    font-family: "baloo_paaji_2medium" !important;
+    font-size: 14px !important;
+    background-color: #161618 !important;
+    color: #fff !important;
+    border: 1px solid #161618 !important;
+    margin: 20px 0 12px 0 !important;
+    left: -84px !important;
+}
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+    color: #fff !important;
+}
+.react-datepicker__day {
+    border: 1px solid #161618 !important;
+}
+.react-datepicker__day:hover {
+    border: 1px solid #fff !important;
+    color: #fff !important;
+    background-color: #161618 !important;
+}
+
+.react-date-picker,
+.react-date-picker *,
+.react-date-picker *:before,
+.react-date-picker *:after {
+    background: #161618;
+    color: #fff;
+    border-radius: 6px;
+}
+.react-date-picker__wrapper {
+    width: 100%;
+    border: 1px solid #272729 !important;
+}
+.react-date-picker__inputGroup {
+    padding: 5px 6px !important;
+}
+.react-calendar {
+    background: #161618 !important;
+}
+.react-date-picker__calendar .react-calendar {
+    border: 1px solid #272729 !important;
+}
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background: #1b1c20 !important;
+}
+.react-calendar__tile--active {
+    background: #1b1c20 !important;
+}
+.react-calendar__tile--now {
+    background: transparent !important;
+}
+
+/* PAGINATION */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    flex-wrap: wrap;
+}
+.pagination a {
+    padding: 4px 14px;
+    border-radius: 5px;
+    color: #161619;
+    background-color: #fff;
+    font-size: 13px;
+    margin: 0 5px 5px;
+    display: inline-block;
+}
+.pagination li.break a {
+    display: inline-block;
+}
+.previous .pagination__link {
+    background-color: unset;
+    color: #98999b;
+}
+.next .pagination__link {
+    background-color: unset;
+    color: #98999b;
+}
+.pagination__link {
+    font-weight: bold;
+}
+.pagination__link--active a {
+    color: #fff;
+    background: #ff5b1e;
+}
+.pagination__link--disabled a {
+    cursor: not-allowed;
+}
+.active_link_classname {
+    color: #fff;
+    background: #ff5b1e;
+}
+/* PAGINATION ENDS*/
+@media all and (max-width: 1550px) {
+    #main {
+        padding: 90px 50px 50px 50px;
+    }
+}
+@media all and (max-width: 768px) {
+    #main {
+        padding: 90px 30px 30px 30px;
+    }
+}
+
+/* date_picker */
+.react-datepicker__month-container {
+    float: left !important;
+}
+.react-datepicker__header {
+    background: black !important;
+    color: #fff !important;
+    border-bottom: 1px solid #1b1c20 !important;
+    padding: 15px 13px 13px 13px !important;
+}
+.react-datepicker__day--keyboard-selected {
+    background: black !important;
+}
+.react-datepicker__navigation--next {
+    top: 16px !important;
+    right: 16px !important;
+    border-left-color: #ccc;
+}
+.react-datepicker__navigation--previous {
+    top: 16px !important;
+    left: 16px !important;
+    border-left-color: #ccc;
+}
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+    color: #fff !important;
+}
+.react-datepicker {
+    font-family: "baloo_paaji_2medium" !important;
+    font-size: 14px !important;
+    background: black !important;
+    color: #fff !important;
+    border: 1px solid #161618 !important;
+    margin: 20px 0 12px 0 !important;
+    left: -84px !important;
+}
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+    color: #fff !important;
+}
+.react-datepicker__day {
+    border: 1px solid #161618 !important;
+}
+
+.react-date-picker,
+.react-date-picker *,
+.react-date-picker *:before,
+.react-date-picker *:after {
+    background: #161619 !important;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 0;
+    width: 100%;
+}
+.react-date-picker__wrapper {
+    width: 100%;
+    border: none !important;
+}
+.react-date-picker__inputGroup {
+}
+.react-calendar {
+    background: #161619 !important;
+}
+.react-date-picker__calendar .react-calendar {
+    border: 1px solid #26272a !important;
+}
+.react-calendar__navigation button:enabled:focus {
+    background: #1b1c20 !important;
+}
+.react-calendar__tile--active {
+    background: #161619 !important;
+}
+.react-calendar__tile--now {
+    background: transparent !important;
+}
+.react-date-picker_inputGroup_input--hasLeadingZero {
+}
+.react-date-picker__inputGroup__input--hasLeadingZero {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.react-date-picker__calendar {
+    width: 412px !important;
+}
+.react-calendar {
+    width: 412px !important;
+}
+.tooltip---tooltip-inner---AMsNF {
+    max-width: 320px;
+    padding: 8px 16px;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.react-date-picker__inputGroup__input--hasLeadingZero {
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+}
