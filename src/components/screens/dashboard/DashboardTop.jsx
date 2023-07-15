@@ -3,6 +3,10 @@ import ButtonLoader from '../../genaral/Loader/ButtonLoader'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import ebook from '../../../assets/images/ebook.png'
+import green from '../../../assets/images/task/active-students.svg'
+import peach from '../../../assets/images/task/our-team.svg'
+import blue from '../../../assets/images/task/students.svg'
+import yellow from '../../../assets/images/task/completed.svg'
 
 function DashboardTop({
   isCountLoading,
@@ -18,11 +22,7 @@ function DashboardTop({
       <TopContainer id={id}>
         <Card to={'/students'}>
           <ImageContainer>
-            <Logo
-              src={
-                'https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/yiaai/12-02-2022/active-students.svg'
-              }
-            />
+            <Logo src={green} />
           </ImageContainer>
           <Description>
             {isCountLoading ? <ButtonLoader /> : <p>{enrolledStudents}</p>}
@@ -31,11 +31,7 @@ function DashboardTop({
         </Card>
         <Card to={'/students'}>
           <ImageContainer>
-            <Logo
-              src={
-                'https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/yiaai/12-02-2022/our-team.svg'
-              }
-            />
+            <Logo src={peach} />
           </ImageContainer>
           <Description>
             {isCountLoading ? <ButtonLoader /> : <p>{notEnrolleStudents}</p>}
@@ -44,11 +40,7 @@ function DashboardTop({
         </Card>
         <Card type="not_active" to="">
           <ImageContainer>
-            <Logo
-              src={
-                'https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/yiaai/12-02-2022/students.svg'
-              }
-            />
+            <Logo src={blue} />
           </ImageContainer>
           <Description>
             {isCountLoading ? <ButtonLoader /> : <p>{totalStudentsCount}</p>}
@@ -57,11 +49,7 @@ function DashboardTop({
         </Card>
         <Card to={'/students'}>
           <ImageContainer>
-            <Logo
-              src={
-                'https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/yiaai/12-02-2022/active-students.svg'
-              }
-            />
+            <Logo src={yellow} />
           </ImageContainer>
           <Description>
             {isCountLoading ? <ButtonLoader /> : <p>{courseCompleted}</p>}

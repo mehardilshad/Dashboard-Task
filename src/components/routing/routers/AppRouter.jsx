@@ -1,7 +1,7 @@
 import React, { Suspense, useState, lazy } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import SectionLoader from '../../genaral/Loader/SectionLoader'
-import Login from '../../screens/Login'
+
 import Courses from '../../screens/Courses'
 
 const Topbar = lazy(() => import('../../includes/Topbar'))
@@ -16,7 +16,6 @@ const AppRouter = () => {
       <>
         <Topbar isExpand={isExpand} setExpand={setExpand} />
         <Routes>
-          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Navigate to="/dashboard/" />} />
 
           <Route path="dashboard" element={<DashBoard />} />

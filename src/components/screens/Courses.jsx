@@ -79,10 +79,7 @@ const Courses = () => {
                       </UserCardCover>
                     ) : (
                       <ImageBox>
-                        <CardImage
-                          src="https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/yiaai/01-02-2022/images/not_loaded.svg"
-                          alt="Image"
-                        />
+                        <h1>No data</h1>
                       </ImageBox>
                     )}
                   </>

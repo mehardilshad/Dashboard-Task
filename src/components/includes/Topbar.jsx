@@ -21,11 +21,6 @@ const Topbar = ({ isExpand, setExpand }) => {
           <ImageContainer>
             <LogoLink to={'/students'}> Students</LogoLink>
           </ImageContainer>
-          <HeaderIcon
-            onClick={showSideMenu}
-            src="https://s3.ap-south-1.amazonaws.com/talrop.com-react-assets-bucket/yiaai/01-02-2022/images/hamburg-icon.svg"
-            alt="Icon"
-          />
         </Head>
       </Container>
     </>
