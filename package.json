@@ -1,6 +1,6 @@
 {
   "homepage": "https://mehardilshad.github.io/Dashboard-Task/",
-  "name": "Task",
+  "name": "task",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -55,6 +55,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "s": "^1.0.0"
   }
 }
